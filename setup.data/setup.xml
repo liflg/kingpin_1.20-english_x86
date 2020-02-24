@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<install
+    product="kingpin"
+    desc="Kingpin: Life of Crime"
+    version="1.20-english-2"
+    binarypath="/usr/local/bin"
+    category="Game"
+    promptbinaries="yes"
+    express="no"
+    superuser="no"
+    reinstall="no"
+    reinstallnowarning="yes"
+    nopromptoverwrite="yes"
+    reinstallfast="yes"
+    splashpos="left"
+    nomenuitems="no"
+    update_url="http://liflg.org/updates/kingpin/updates.txt"
+>
+
+  <require command="sh setup.data/tmp_check.sh 535">
+	 There is not enough free diskspace in your TMPDIR 
+  	 You need about: 535 MB
+  	 Try: export TMPDIR=/where/you/have/alot/of/freespace
+  </require>
+  
+  <cdrom id="disc1" name="Kingpin: Life of Crime">kingpin/data1.cab</cdrom>
+
+  <readme>
+    README.liflg
+  </readme>
+
+  <option install="true" required="true" size="541M">
+    Base Install
+
+    <binary arch="any" libc="any" binpath="bin" symlink="kingpin" icon="kingpin.xpm" name="Kingpin: Life of Crime" desc="Kingpin: Life of Crime" play="yes">
+     kingpin.sh
+    </binary>
+
+  <files cdromid="disc1">
+  </files> 
+  
+  <files>
+   kingpin.conf
+  </files>
+  
+  <script cdromid="disc1">
+   sh setup.data/install-disc1.sh
+  </script>
+  
+  <files srcpath="data/common_files">
+   main
+  </files>
+  
+  <files srcpath="data/mature_files">
+   main
+  </files>
+  
+  <files srcpath="data/program_executable_files">
+   main
+  </files>
+  
+  <files>
+   kingpin_1.20.tar
+   kphack.tar.gz
+   kingpin.xpm
+  </files>
+  
+  </option>
+</install>

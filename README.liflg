@@ -1,0 +1,50 @@
+
+			Kingpin: Life of Crime: English version 1.20
+	                 	(http://www.planetkingpin.com/)
+
+========================================
+
+ABOUT
+=====
+
+	Kingpin: Life of Crime is a first-person shooter,
+	in which the player takes the role of the thug
+	on his mission of revenge.
+
+RUNNING THE GAME
+=============
+
+	Run "kingpin" to play.
+
+NOTES
+====
+	
+	- do not forget to mount your kingpin cdrom
+	  before you start the game	
+
+	- if you do not have any sound in the game try this as root user:
+	  echo kingpin.x86 0 0 direct > /proc/asound/card0/pcm0p/oss
+
+	- if you change the video mode and the game crashed try to:
+
+	 * create a symbolic link, called libGl.so
+           which points to your real libGL.so library
+	   within the installation directory
+
+         * add "+set gl_mode x" to the start command,
+           possible values for x are:
+             0: 640x480
+             1: 800x600
+             2: 960 720
+             3: 1024 768
+             4: 1152 864
+             5: 1280 1024
+             6: 1600 1200
+	
+TECHNICAL SUPPORT
+=============
+
+	Website: http://liflg.org/
+	Forum:   http://liflg.org/forum/
+
+The Loki Installers for Linux Gamers Team
